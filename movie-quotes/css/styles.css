@@ -1,0 +1,38 @@
+body {
+    font-family: 'Courier', monospace;
+
+    background-color: #f0f0f0;
+    background-color: black; 
+    
+    line-height: 1.6;
+}
+
+.img {
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Add some margin around the image */
+}
+
+.quote-section {
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+}
+
+.quote {
+    background-color: #F0F0F0;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 17px;
+    
+}
+
+.character {
+    font-weight: bold;
+    color: black;
+}
+
+h1, h2 {
+    color: whitesmoke;
+    text-align: center;
+}
