@@ -1,0 +1,98 @@
+html {
+    font-family: "Verdana", monospace;
+}
+section {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+body {
+    font-family: "Verdana", monospace;
+    margin-top: 3.5%;
+    margin-left: 7%;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: rgb(149, 10, 10);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: rgb(186, 125, 125);
+    line-height: 2.4%;
+}
+
+h3 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 1px;
+    color: rgb(184, 59, 59);
+    color: rgb(201, 153, 153);
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 0.2rem;
+    margin-block-end: 1.2rem;
+
+}
+
+.styledFont {
+    font-family: 'Merriweather', serif;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.wide {
+    letter-spacing: 0.3em;
+}
+
+.narrow {
+    letter-spacing: -0.06em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower  {
+    text-transform: lowercase; 
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.footer {
+    font-size: small;
+    text-align: center;
+}
