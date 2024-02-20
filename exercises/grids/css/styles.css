@@ -1,0 +1,20 @@
+
+.grid img {
+    width: 150px;
+}
+
+.grid {
+    padding: 0;
+}
+
+.grid li {
+    display: block;
+}
+
+.using-inline-block li {
+    display: inline-block;
+}
+
+.using-inline-block {
+    font-size: 0;
+} 
