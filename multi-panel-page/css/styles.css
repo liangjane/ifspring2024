@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    font-style: normal;
+}
+
+.column_container {
+    /* background-color: rgb(255, 0, 0, 0.25); */
+    margin: auto;
+    width: 960px; 
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: rgb(255, 0, 0, 0.25);
+    background-image: url('../images/daisy3.jpg'); 
+    background-size: cover;
+    background-position: 50% 80%;
+    
+}
+header .column_container {
+    text-align: center;
+    padding: 166px 0 184px 0;
+
+}
+
+header h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.section_one {
+    background-color: beige;
+}
+
+.section_two {
+    background-color: rgb(200, 223, 238);
+}
+
+.section_three {
+    background-color: rgb(245, 225, 228);
+}
+
+footer {
+    background-color: aliceblue;
+}
+
+.section_one .column_container {
+    text-align: left;
+    padding: 39.5px 0 45px 0;
+}
+
+.section_one p {
+    padding: 8px 0;
+}
+
+.img_1 {
+    width: 400px;
+    height: 300px;
+    float: right;
+    object-fit: cover;
+    margin-left: 40px;
+    margin-bottom: 40px;
+} 
+
+
+.section_two .column_container {
+    padding: 43px 0 47px 0;
+}
+
+.section_two p {
+    padding: 7px 0;
+}
+
+
+.grid {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+
+.grid_photo {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 0.75rem 0rem 0;
+}
+
+.photo_text {
+    width: 45%;
+}
+
+.grid li {
+    padding-top: 8px;
+    flex: 50%;
+    display: flex;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.section_three .column_container {
+    padding: 41px 0 100.5px 0;
+}
+
+.section_three p {
+    padding-top: 7.5px;
+    text-align: center;
+    font-size: 26px;
+    margin: auto;
+    width: 708px;
+}
+
+footer p {
+    padding: 40px 0 40px 0;
+}
