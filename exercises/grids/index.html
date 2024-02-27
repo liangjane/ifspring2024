@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <h1>Building Grids</h1> 
+    <h1>Building Grids</h1>
 
     <p>There are a number of ways to build grids with HTML and css. Let's look at a few of the most common.</p>
 
@@ -79,7 +79,6 @@
           <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
           <div>Abram Siemsen</div>
         </li>
-        
         <!-- Add copies of the <li> element here, and change the names. (We can use the generic portait image for everybody.) -->
       </ul>
 
@@ -102,6 +101,17 @@
 
       <ol class="instructions">
         <li>For this grid's <code class="tag">li</code> elements, set <code>display: inline-block;</code>. Be sure you aren't styling using the shared <code>.grid li</code> selector!</li>
+      </ol>
+
+      <p>At this point, our grid starts to look like it makes sense. But lets take a few more steps to tidy things up. We'll apply these rules using the shared <code>grid</code> class, so we don't have to do them again for the next grid.</p>
+
+      <ol class="instructions">
+        <li>You should have already created a selector for <code>.grid li</code>, now add the following rules:</li>
+        <li><code>width: 25%;</code> Should ensures our grid is "4-up" (25% * 4 = 100% of the available width).</li>
+        <li><code>text-align: center;</code> Centers the image and name within each box.</li>
+        <li><code>font-size: 0.8rem;</code> Makes the text a bit smaller.</li>
+        <li><code>margin-bottom: 1rem;</code> Adds some space below each item.</li>
+        <li>Finally, in your selector for the <code class="tag">img</code>, change the width to <code>width: 90%;</code>. This means "be 90% the width of your parent." The parent <code>li</code> is 25% of the total page width. This ensures the image has a bit of space on either side within its parent item, even on small devices.</li>
       </ol>
 
       <p>This grid is shaping up fairly quickly, but there's one quirk. Our shared styles say the <code class="tag">li</code> elements should be <code>width: 25%;</code>... so why aren't they 4-up? The answer lies with a rendering detail of <code>inline-block</code> elements. Because <em>inline-block</em> elements wrap like words, it turns out the browser pays attention to the <kbd>space</kbd> character between these elements in the HTML code &mdash; just like it pays attention to a <kdb>space</kdb> between words. What's happening is this: we have 25% + 25% + 25% + 25% for our list items <strong>+ 3 spaces</strong>, which adds up to more than 100%. The last item must therefore fall to the next line.</p>
@@ -128,7 +138,42 @@
         <li>Copy the entire <code class="tag">ul</code> grid from the previous section, and paste it here, then change its class list to be <code>class="grid using-flex"</code>.</li>
       </ol>
 
-      <!-- <ul class="grid using-flex">...</ul> goes here -->
+     
+      <ul class="grid using-flex">
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        
+      </ul>
 
       <p>Look, we picked up a bunch of existing styles from the shared <code>grid</code> class, so our images are already sized, the text is centered, etc. Hurray for shared classes to avoid repetition!</p>
 
@@ -155,6 +200,42 @@
       </ol>
 
       <!-- <ul class="grid using-grid">...</ul> goes here -->
+
+      <ul class="grid using-grid">
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        <li>
+          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+          <div>Abram Siemsen</div>
+        </li>
+        
+      </ul>
 
       <ol class="instructions">
         <li>Create a selector for this grid's <code class="tag">ul</code> using it's specific class, and add the following rules:</li>
