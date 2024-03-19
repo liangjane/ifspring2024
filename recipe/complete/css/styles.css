@@ -127,7 +127,6 @@ input[type=checkbox]:checked + label.grey_out{
 
 
 .instructions {
-
     margin-top: 2.5em;
     padding: 1em 20em 1em 20em;
     background-color: white;
@@ -136,10 +135,9 @@ input[type=checkbox]:checked + label.grey_out{
 
 
 .instructions img {
-     width: 400px;
-     padding: 2%;
-     border-radius: 13px;
-     
+    width: 400px;
+    padding: 2%;
+    border-radius: 13px; 
 }
 
 
@@ -211,6 +209,5 @@ input[type=checkbox]:checked + label.grey_out{
     .instructions img {
         width: 90%;
     }
-    
    
 }
