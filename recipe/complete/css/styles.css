@@ -1,0 +1,208 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    background-color:  #fdf5e8;
+    color: #1b1e22;
+   
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+.header_grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.head_item {
+   width: 100%;
+}
+
+h1.title {
+    padding: 15% 20% 5% 20%;
+    font-size: 3em;
+    
+}
+
+img.head_item {
+    /* min-width: 500px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    /* overflow: hidden; */
+    border-radius: 13px;
+}
+
+#description {
+    padding: 0% 20% 5% 20%;
+    font-size: 1.2em;
+}
+
+
+.info {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+   
+    text-align: left;
+    display: grid;
+    justify-content: center;
+    background-color:  white;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 13px;
+}
+
+.time_info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    padding-left: 5em;
+    padding-right: 0.1em;
+    border-right: 1px solid black;
+    
+}
+
+#equipment {
+    text-align: center;
+    margin: auto;
+}
+
+#equipment h3 {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 10px;
+    font-size: 1em;
+}
+   
+#equipment ul {
+    margin: 1rem 10px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#equipment li {
+    text-align: center;
+}
+
+
+#equipment li::before, .ingredients p::before {
+    content: "• ";
+}
+
+.recipe {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.ingredients {
+    
+    text-align: left;
+    padding: 1em 5em 1em 5em;
+    border-radius: 13px;
+    background-color:  white;
+
+}
+
+
+.instructions {
+
+    margin-top: 2.5em;
+    padding: 1em 20em 1em 20em;
+    background-color: white;
+    border-radius: 13px;
+}
+
+
+.instructions img {
+     width: 400px;
+     padding: 2%;
+     border-radius: 13px;
+     
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+@media (max-width: 1195px) {
+    
+    h1.title {
+        padding: 10% 4% 0.005% 4%;
+        font-size: 2.5em; 
+    }
+
+    #description {
+        padding: 0% 10%;
+        font-size: 1em;
+    }
+
+    #equipment {
+        padding-left: 1.3em;
+    }
+
+    .time_info {
+        padding-left: 4em;
+    }
+
+    .ingredients {
+        padding-left: 4em;
+        padding-right: 3em;
+       
+    }
+   
+}
+
+@media (max-width: 850px) {
+    .header_grid {
+        grid-template-columns: 1fr;
+    }
+    h1.title {
+        padding-top: 5%;
+        font-size: 2em; 
+    }
+    .info {
+        font-size: smaller;
+        width: 98%;
+    }
+
+    .time_info {
+        padding-left: 0.5em;
+    }
+    #equipment {
+        padding-left: 0.5em;
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .recipe {
+        display: block;
+        width: 98%;
+    }
+    .ingredients, .instructions {
+        padding: 0.2em 0.5em 0.2em 0.9em ;
+        
+    }
+    .instructions img {
+        width: 90%;
+    }
+    
+    
+   
+}
