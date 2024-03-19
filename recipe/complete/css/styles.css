@@ -35,10 +35,10 @@ h1.title {
 }
 
 img.head_item {
-    /* min-width: 500px; */
+    
     margin-top: auto;
     margin-bottom: auto;
-    /* overflow: hidden; */
+   
     border-radius: 13px;
 }
 
@@ -185,6 +185,7 @@ img.head_item {
     .time_info {
         padding-left: 0.5em;
     }
+
     #equipment {
         padding-left: 0.5em;
         ul {
@@ -202,7 +203,6 @@ img.head_item {
     .instructions img {
         width: 90%;
     }
-    
     
    
 }
