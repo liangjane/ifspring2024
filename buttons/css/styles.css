@@ -1,0 +1,536 @@
+
+/* tesla */
+a#btn_tesla {
+    display: inline-block;
+    height: 55px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 20px 0 20px;
+    background-color: white;
+    color: #fff;
+    transition: all .5s;
+}
+
+a#btn_tesla img {
+    width: 100%;
+    margin: auto;
+    transition: all 0.3s;
+    filter: brightness(0%);
+}
+
+a#btn_tesla:hover {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+a#btn_tesla:focus img,
+a#btn_tesla:active img,
+a#btn_tesla:hover img {
+    transform: scale(0.8);
+    filter: brightness(100%);
+}
+
+
+/* Missouri Botanical Gardens */
+#btn_missouri_bg img {
+    width: 90%;
+    margin: auto;
+    transition: filter 0.5s;
+    /* Add transition for smooth animation */
+    filter: brightness(0%);
+}
+
+a#btn_missouri_bg {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    width: 200px;
+    padding: 8px 0px 4px 0px;
+    background-color: #D9EAE2;
+    box-sizing: border-box;
+    border-radius: 500px;
+    transition: all .2s;
+}
+
+a#btn_missouri_bg:hover {
+    background-color: #d9eae293
+}
+
+
+a#btn_missouri_bg:hover img {
+    filter: brightness(100%);
+}
+
+
+/* Moo */
+/* stack-exchange */
+a#btn_moo {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 7px 14px;
+    background-color: #fff;
+    overflow: hidden;
+
+    color: #107C5D;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    transition: all .1s;
+}
+
+
+a#btn_moo span {
+    position: relative;
+    z-index: 2;
+}
+
+a#btn_moo:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: -20px;
+    left: 0px;
+    background-color: #03a77e;
+    transform: rotateZ(-90deg) translate(-100%, -100%);
+    transform-origin: top left;
+    transition: transform .3s;
+    transition-timing-function: linear;
+}
+
+a#btn_moo:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    right: 4px;
+    left: 4px;
+    line-height: 92px;
+    font-size: 24px;
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+a#btn_moo:hover {
+    color: #03a77e;
+}
+
+a#btn_moo:hover:before {
+    transform: rotateZ(0deg) translate(0%, -0%);
+}
+
+/* samsung */
+a#btn_samsung {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: white;
+    border: 2px solid white;
+    color: #fff;
+    transition: all .5s;
+}
+
+a#btn_samsung img {
+    width: 90%;
+    margin: auto;
+    transition: all 0.3s;
+    filter: brightness(0%);
+}
+
+a#btn_samsung:hover {
+    background-color: #fff;
+    border: 2px solid #1429A0;
+    color: #000;
+    overflow: hidden;
+    animation: samsung-grow 1s linear forwards;
+}
+
+
+a#btn_samsung:hover img {
+    transform: scale(1.4);
+    filter: brightness(100%);
+
+}
+
+@keyframes samsung-grow {
+    0% {
+        width: 20%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+/* Michael Kors */
+a#btn_mk {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 7px 14px;
+    background-color: #fff;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .1s;
+}
+
+a#btn_mk span {
+    position: relative;
+    z-index: 2;
+}
+
+a#btn_mk:before {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+}
+
+a#btn_mk:hover {
+    color: white;
+}
+
+a#btn_mk:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*fitbit */
+a#btn_fitbit {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    padding: 15px 0px 15px 0px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 500px;
+    transition: all 1s;
+}
+
+a#btn_fitbit img {
+    width: 100%;
+    margin: auto;
+    transition: all 0.3s;
+    filter: brightness(0%);
+}
+
+a#btn_fitbit:before {
+    content: "";
+    display: block;
+    background-color: #13B0B9;
+    border-radius: 100px;
+    width: 0%;
+    height: 0%;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 1s;
+}
+
+a#btn_fitbit span {
+    position: relative;
+    z-index: 2;
+}
+
+a#btn_fitbit:hover:before {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_fitbit:hover img {
+    filter: brightness(100%);
+}
+
+/* St. Jude */
+a#btn_jude {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+    padding: 7px 14px;
+    background-color: white;
+    color: #145AAC;
+    font-family: "Bitter", serif;
+    font-size: 20px;
+    font-weight: 550;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 1s;
+}
+
+a#btn_jude img {
+    width: 200px;
+    filter: hue-rotate(230deg);
+    transition: all 0.1s;
+}
+
+a#btn_jude:hover {
+    color: #B50000;
+
+}
+
+a#btn_jude:hover img {
+    filter: hue-rotate(20deg) saturate(150%) brightness(110%);
+}
+
+.jude_underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.jude_underline:after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    bottom: 0px;
+    background-color: #B50000;
+    height: 3px;
+    width: 0%;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.jude_underline:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/* apple */
+a#btn_apple {
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding: 5px 0px 10px 0px;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_apple:hover {
+    background-color: #fc9a18;
+    background-color: black;
+    color: white;
+}
+
+a#btn_apple:hover span.logo {
+    animation: showup 1s;
+}
+
+a#btn_apple:hover span.text {
+    width: 0px;
+    animation: reveal 3s;
+}
+
+a#btn_apple:hover span.text {
+    animation: slidein 3s;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    5% {
+        margin-left: -500px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    5% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 100%;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+
+/* The New Yorker */
+a#btn_ny {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 70px;
+    width: 200px;
+    padding: 15px 0px 15px 0px;
+    background-color: white;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+a#btn_ny img {
+    width: 100%;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+a#btn_ny:after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    bottom: 0px;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+a#btn_ny:hover {
+    transform: scale(1.2);
+}
+
+a#btn_ny:hover:after,
+a#btn_ny:focus:after,
+a#btn_ny:active:after {
+    left: 0;
+    width: 100%;
+}
+
+/* npr */
+a#btn_npr {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    
+    padding: 0px 3px 10px 13px;
+    background-color: #fff;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-decoration: none;
+    letter-spacing: 24px;
+    transition: all .1s;
+}
+
+a#btn_npr span {
+    position: relative;
+    z-index: 2;
+}
+
+a#btn_npr:before {
+    padding: 0; 
+    content: "";
+    display: block;
+    background-image: linear-gradient(90deg, #d62021 32.33%, black 32.33%, black 63.66%, #247bbd 63.66%, #247bbd 94%,white 94%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0%;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 0.5s;
+}
+
+a#btn_npr:hover {
+    color: white;
+}
+
+a#btn_npr:hover:before,
+a#btn_npr:active:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
