@@ -1,0 +1,106 @@
+.simple h1 {
+    text-transform: uppercase;
+    
+    margin: 5% ;
+    text-align: left;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #f202a2;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.30); */
+   
+}
+.text {
+    padding: 0;
+}
+.paragraphs p {
+    margin: 5% 0%;
+}
+
+em {
+    font-weight: bold;
+}
+
+h3 {
+    margin: 5% 10%; 
+}
+
+#greta {
+    background-image: url('../photos/greta.jpeg');
+    
+}
+
+
+p.caption {
+    font-size: 12px;
+    margin: 0.6% 0%;
+}
+
+
+/* page navigation
+
+#page-nav {
+    position: sticky;
+    align-items: center;
+    top: 40%;
+    padding: 1em;
+}
+
+nav#page-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav#page-nav ul li {
+    border-right: 1px solid #ccc;
+}
+
+nav#page-nav ul li:last-child {
+    border-right: 0;
+}
+
+nav#page-nav ul li a {
+    display: block;
+    padding: 0 2em;
+    margin: 0;
+    transition: all .5s;
+    color: black;
+}
+
+nav#page-nav ul li a:hover {
+    color: #ffb996;
+}
+ */
+
+
+@media screen and (min-width:650px) {
+
+    .simple h1 { 
+        margin: 10% 5% 5% 5% ;
+        text-align: center;
+        font-size: 80px;   
+    }
+
+    #greta {
+        height: 600px;
+    } 
+
+    .paragraphs p {
+        margin: 3% 0%;
+    }
+
+    p.caption {
+        margin: 0.8% 0%;
+    }
+
+        
+
+
+}
+
+header .caption {
+    margin-left: 2%;
+  }
+  
